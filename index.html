@@ -558,6 +558,10 @@ pre .xml .cdata {
   max-height: calc(100vh - 4em);
 }
 
+.img-with-header img {
+  max-height: calc(100vh - 6em);
+}
+
 .align-top .slide-content {
   padding: 0;
   height: 100%;
@@ -683,7 +687,64 @@ h2.emoji {
     <section class="slide-content"><p><img src="images/cart-abandonment-reasons-trans.png" alt="Cart abandoment reasons"></p>
 <div class="caption"><a href="https://baymard.com/lists/cart-abandonment-rate">baymard.com/lists/cart-abandonment-rate</a></div></section>
   </div>
-  <div class="slide hidden" id="slide-5">
+  <div class="slide hidden  img-with-caption" id="slide-5">
+    <section class="slide-content"><h2 id="what-if-your-web-browser-could-make-this-easier-">What if your web browser could make this easier...</h2>
+</section>
+  </div>
+  <div class="slide hidden  img-with-caption" id="slide-6">
+    <section class="slide-content"><h2 id="-for-users">...for users</h2>
+<ul>
+<li>Consistent experience</li>
+<li>Secure &quot;auto-complete&quot;</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden  img-with-caption" id="slide-7">
+    <section class="slide-content"><h2 id="-for-us-web-devs">...for us web devs</h2>
+<ul>
+<li>Give us the UI!</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden  img-with-header" id="slide-8">
+    <section class="slide-content"><h4 id="payment-request-api">Payment Request API</h4>
+<!-- TODO replace with live demo and backup image? -->
+
+<p><img src="images/payment-request-demo-1.gif" alt="Payment Request API demo"></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-9">
+    <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (<span class="hljs-built_in">window</span>.PaymentRequest) {
+  <span class="hljs-comment">// We're good to go...</span>
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-comment">// Alas! Use your legacy checkout form...</span>
+}</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-10">
+    <section class="slide-content"><h3 id="todo-update-to-newer-version">TODO update to newer version</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// A couple of example payment networks (others exist too!)</span>
+<span class="hljs-keyword">var</span> methodData = [{supportedMethods: [<span class="hljs-string">'visa'</span>, <span class="hljs-string">'mastercard'</span>]}];
+<span class="hljs-keyword">var</span> details = {total: {label: <span class="hljs-string">'Something that costs money'</span>, amount: {currency: <span class="hljs-string">'GBP'</span>, value: <span class="hljs-string">'9.99'</span>}}};
+<span class="hljs-comment">// Show a native Payment Request UI and handle the result</span>
+<span class="hljs-keyword">new</span> PaymentRequest(methodData, details)
+  .show()
+  .then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">uiResult</span>) </span>{
+    processPayment(uiResult);
+  })
+  .catch(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error</span>) </span>{
+    handlePaymentError(error);
+  });</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-11">
+    <section class="slide-content"><h3 id="todo-shipping-details-etc-">TODO: shipping details etc.</h3>
+<h3 id="todo-browser-support">TODO: browser support</h3>
+<h3 id="todo-apple-pay-for-the-web-">TODO: Apple Pay for the web?</h3>
+<h3 id="todo-slide-on-possible-future-developments">TODO: Slide on possible future developments</h3>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-12">
     <section class="slide-content"><h1 id="thanks-">Thanks! 🙏</h1>
 <div class="contact">
   <h3> <a href="https://twitter.com/poshaughnessy">@poshaughnessy</a> </h3>
