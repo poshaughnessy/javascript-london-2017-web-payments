@@ -35,6 +35,67 @@ controls: false
 
 <div class="caption">[baymard.com/lists/cart-abandonment-rate](https://baymard.com/lists/cart-abandonment-rate)</div>
 
+-- img-with-caption
+
+## What if your web browser could make this easier...
+
+-- img-with-caption
+
+## ...for users
+
+* Consistent experience
+* Secure "auto-complete" 
+
+-- img-with-caption
+
+## ...for us web devs
+
+* Give us the UI!
+
+-- img-with-header
+
+#### Payment Request API
+
+<!-- TODO replace with live demo and backup image? -->
+
+![Payment Request API demo](images/payment-request-demo-1.gif)
+
+--
+
+```javascript
+if (window.PaymentRequest) {
+  // We're good to go...
+} else {
+  // Alas! Use your legacy checkout form...
+}
+```
+
+--
+
+### TODO update to newer version
+
+```javascript
+// A couple of example payment networks (others exist too!)
+var methodData = [{supportedMethods: ['visa', 'mastercard']}];
+var details = {total: {label: 'Something that costs money', amount: {currency: 'GBP', value: '9.99'}}};
+// Show a native Payment Request UI and handle the result
+new PaymentRequest(methodData, details)
+  .show()
+  .then(function(uiResult) {
+    processPayment(uiResult);
+  })
+  .catch(function(error) {
+    handlePaymentError(error);
+  });
+```
+
+--
+
+### TODO: shipping details etc.
+### TODO: browser support
+### TODO: Apple Pay for the web?
+### TODO: Slide on possible future developments 
+
 --
 
 # Thanks! 🙏

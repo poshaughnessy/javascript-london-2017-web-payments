@@ -550,6 +550,10 @@ pre .xml .cdata {
   max-height: calc(100vh - 4em);
 }
 
+.img-with-header img {
+  max-height: calc(100vh - 6em);
+}
+
 .align-top .slide-content {
   padding: 0;
   height: 100%;
