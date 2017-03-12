@@ -23,7 +23,11 @@ controls: false
 
 [@samsunginternet](https://twitter.com/samsunginternet)
 
--- 
+-- img-with-caption four-images
+
+![Very long form 1](images/very-long-checkout-form-1.png) ![Very long form 2](images/very-long-checkout-form-2.png) ![Very long form 3](images/very-long-checkout-form-3.png) ![Very long form 4](images/very-long-checkout-form-4.png)
+
+<div class="caption">[www.smashingmagazine.com/2013/03/designing-a-better-mobile-checkout-process/](https://www.smashingmagazine.com/2013/03/designing-a-better-mobile-checkout-process/)</div>
 
 -- img-with-caption
 

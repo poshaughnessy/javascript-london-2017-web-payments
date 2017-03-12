@@ -593,6 +593,10 @@ pre .xml .cdata {
 
 /* Slide specific styles here */
 
+.four-images .slide-content p img {
+  max-width: 24%;
+}
+
 .slide.card-closeup:before {
   background-image: url(images/card-closeup-purple.jpg);
   -webkit-filter: blur(8px) brightness(0.175);
