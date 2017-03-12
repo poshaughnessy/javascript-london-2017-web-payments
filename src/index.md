@@ -3,7 +3,7 @@ output: public/index.html
 theme: peter-theme
 controls: false
 
--- purple
+-- card-closeup purple
 
 # Web Payments
 ## and the future of online checkouts
@@ -17,19 +17,21 @@ controls: false
   <p>[@poshaughnessy](https://twitter.com/poshaughnessy)</p>
 </div>
 
--- blue-steel align-top img-with-caption
+-- align-top img-with-caption
 
 ![Samsung Internet icon on homescreen](images/samsung-internet-phone-blur.png)
 
 [@samsunginternet](https://twitter.com/samsunginternet)
 
--- light-blue
+-- 
 
--- pink
+-- img-with-caption
 
--- green
+![Cart abandoment reasons](images/cart-abandonment-reasons-trans.png)
 
--- purple
+<div class="caption">[baymard.com/lists/cart-abandonment-rate](https://baymard.com/lists/cart-abandonment-rate)</div>
+
+--
 
 # Thanks! 🙏
 

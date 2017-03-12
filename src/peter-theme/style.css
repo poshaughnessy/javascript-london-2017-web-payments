@@ -8,7 +8,7 @@ body {
   font-size: 80%;
   text-align: center;
   overflow: hidden;
-  color: #333;
+  color: #fff;
 }
 
 html,
@@ -131,6 +131,8 @@ h1, h2 {
   margin: 0 0 0.25em 0;
   font-weight: bold;
   transform: scaleX(1.05);
+  -webkit-text-shadow: 1px 1px 0 #666;
+  text-shadow: 1px 1px 0 #666;
 }
 
 h1 {
@@ -558,15 +560,54 @@ pre .xml .cdata {
   top: 0;
 }
 
+/* For background images so we can apply filters */
+.slide {
+  overflow: auto;
+  position: relative;
+}
+/* Background image */
+.slide:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  display: block;
+  background-color: #222;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: inset 0 0 5em 1em #000; /* Vignette */
+  width: 100%;
+  height: 100%;
+  /* To fix blurred edges. See: http://stackoverflow.com/questions/12224320/defined-edges-with-css3-filter-blur */
+  transform: scale(1.03);
+}
+/* Background image to render things on top of */
+.slide.bg-fade:before {
+  -webkit-filter: blur(3px) grayscale(0.8) brightness(0.2);
+  filter: blur(3px) grayscale(0.8) brightness(0.2);
+}
+.slide-content {
+  z-index: 1;
+}
+
 /* Slide specific styles here */
+
+.slide.card-closeup:before {
+  background-image: url(images/card-closeup-purple.jpg);
+  -webkit-filter: blur(8px) brightness(0.175);
+  filter: blur(8px) brightness(0.175);
+}
 
 .slide.orange {
   background-color: #FCC594;
-} 
+}
 
+/*
 .slide.purple {
   background-color: #9191C7;
 }
+*/
 
 .slide.blue {
   background-color: #9dc7e0;
