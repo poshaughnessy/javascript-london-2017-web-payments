@@ -42,7 +42,7 @@ controls: false
 * <strong><em>For users:</em></strong> consistent & secure experience
 * <strong><em>For web devs:</em></strong> ready-to-use UI!
 
-<div class="credit">By [Oha-Lau 2](https://m.flickr.com/#/photos/oha_lau2/4938316914)</div>
+<div class="credit">By [Marc Falardeau](https://www.flickr.com/photos/49889874@N05/5645164344)</div>
 
 -- bg-white
 
@@ -74,7 +74,7 @@ var methodData = var methodData = [{
 }];
 
 var details = {
-  total: {label: 'Awesome socks', amount: {currency: 'GBP', value: '9.99'}}
+  total: {label: 'Socks', amount: {currency: 'GBP', value: '12.00'}}
 };
 ```
 --
@@ -104,7 +104,7 @@ new PaymentRequest(methodData, details)
 
 ```javascript
 var details = {
-  total: {label: 'Awesome socks', amount: {currency: 'GBP', value: '9.99'}},
+  total: {label: 'Socks', amount: {currency: 'GBP', value: '12.00'}},
   shippingOptions: [
     {
       id: 'standard',
