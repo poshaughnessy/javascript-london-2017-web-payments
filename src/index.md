@@ -3,7 +3,7 @@ output: public/index.html
 theme: peter-theme
 controls: false
 
--- card-closeup purple
+-- card-closeup
 
 # Web Payments
 ## and the future of online checkouts
@@ -23,11 +23,11 @@ controls: false
 
 [@samsunginternet](https://twitter.com/samsunginternet)
 
--- img-with-caption four-images
+-- img-with-caption five-images
 
-![Very long form 1](images/very-long-checkout-form-1.png) ![Very long form 2](images/very-long-checkout-form-2.png) ![Very long form 3](images/very-long-checkout-form-3.png) ![Very long form 4](images/very-long-checkout-form-4.png)
+![Very long form 1](images/very-long-checkout-form-1.png) ![Very long form 2](images/very-long-checkout-form-2.png) ![Very long form 3](images/very-long-checkout-form-3.png) ![Very long form 4](images/very-long-checkout-form-4.png) ![Very long form 5](images/very-long-checkout-form-5.png)
 
-<div class="caption">[www.smashingmagazine.com/2013/03/designing-a-better-mobile-checkout-process/](https://www.smashingmagazine.com/2013/03/designing-a-better-mobile-checkout-process/)</div>
+### 😱
 
 -- img-with-caption
 
@@ -35,26 +35,20 @@ controls: false
 
 <div class="caption">[baymard.com/lists/cart-abandonment-rate](https://baymard.com/lists/cart-abandonment-rate)</div>
 
--- img-with-caption
+-- img-with-caption what-if
 
-## What if your web browser could make this easier...
+## What if your browser could help?
 
--- img-with-caption
+* <strong><em>For users:</em></strong> consistent & secure experience
+* <strong><em>For web devs:</em></strong> ready-to-use UI!
 
-## ...for users
+<div class="credit">By [Yeonsang](https://m.flickr.com/#/photos/mountainbread/2557214784)</div>
 
-* Consistent experience
-* Secure "auto-complete" 
+-- bg-white
 
--- img-with-caption
+[![Payment Request API spec](images/payment-request-api-spec.png)](https://www.w3.org/TR/payment-request/)
 
-## ...for us web devs
-
-* Give us the UI!
-
--- img-with-header
-
-#### Payment Request API
+--
 
 <!-- TODO replace with live demo and backup image? -->
 

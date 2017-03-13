@@ -601,40 +601,20 @@ pre .xml .cdata {
   max-width: 24%;
 }
 
+.five-images .slide-content p img {
+  max-width: 19%;
+}
+
 .slide.card-closeup:before {
   background-image: url(images/card-closeup-purple.jpg);
-  -webkit-filter: blur(8px) brightness(0.175);
-  filter: blur(8px) brightness(0.175);
+  -webkit-filter: blur(8px) brightness(0.25);
+  filter: blur(8px) brightness(0.25);
 }
 
-.slide.orange {
-  background-color: #FCC594;
-}
-
-/*
-.slide.purple {
-  background-color: #9191C7;
-}
-*/
-
-.slide.blue {
-  background-color: #9dc7e0;
-}
-
-.slide.blue-steel {
-  background-color: #b6c3d9;
-}
-
-.slide.light-blue {
-  background-color: #bedcfe;
-}
-
-.slide.green {
-  background-color: #8ACBAC;
-}
-
-.slide.pink {
-  background-color: #AE8CA3;
+.slide.what-if:before {
+  background-image: url(images/what-if.jpg);
+  -webkit-filter: blur(2px) brightness(0.25) grayscale(0.2);
+  filter: blur(3px) brightness(0.2) grayscale(0.2);
 }
 
 .emoji {
@@ -643,4 +623,29 @@ pre .xml .cdata {
 
 h2.emoji {
   font-size: 3em;
+}
+
+.what-if li {
+  margin-top: 1em;
+}
+
+.what-if ul strong {
+  padding-right: 10px;
+}
+
+.slide.bg-white:before {
+  background-color: #fff;
+  box-shadow: none;
+}
+
+.purple {
+  color: #706cf5
+}
+
+.light-purple {
+  color: #c4c3f5
+}
+
+.light-orange {
+  color: #ffa67c;
 }

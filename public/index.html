@@ -609,40 +609,20 @@ pre .xml .cdata {
   max-width: 24%;
 }
 
+.five-images .slide-content p img {
+  max-width: 19%;
+}
+
 .slide.card-closeup:before {
   background-image: url(images/card-closeup-purple.jpg);
-  -webkit-filter: blur(8px) brightness(0.175);
-  filter: blur(8px) brightness(0.175);
+  -webkit-filter: blur(8px) brightness(0.25);
+  filter: blur(8px) brightness(0.25);
 }
 
-.slide.orange {
-  background-color: #FCC594;
-}
-
-/*
-.slide.purple {
-  background-color: #9191C7;
-}
-*/
-
-.slide.blue {
-  background-color: #9dc7e0;
-}
-
-.slide.blue-steel {
-  background-color: #b6c3d9;
-}
-
-.slide.light-blue {
-  background-color: #bedcfe;
-}
-
-.slide.green {
-  background-color: #8ACBAC;
-}
-
-.slide.pink {
-  background-color: #AE8CA3;
+.slide.what-if:before {
+  background-image: url(images/what-if.jpg);
+  -webkit-filter: blur(2px) brightness(0.25) grayscale(0.2);
+  filter: blur(3px) brightness(0.2) grayscale(0.2);
 }
 
 .emoji {
@@ -651,6 +631,31 @@ pre .xml .cdata {
 
 h2.emoji {
   font-size: 3em;
+}
+
+.what-if li {
+  margin-top: 1em;
+}
+
+.what-if ul strong {
+  padding-right: 10px;
+}
+
+.slide.bg-white:before {
+  background-color: #fff;
+  box-shadow: none;
+}
+
+.purple {
+  color: #706cf5
+}
+
+.light-purple {
+  color: #c4c3f5
+}
+
+.light-orange {
+  color: #ffa67c;
 }
 
   </style>
@@ -663,7 +668,7 @@ h2.emoji {
     <div class="progress-bar"></div>
   </div>
 
-  <div class="slide  card-closeup purple" id="slide-1">
+  <div class="slide  card-closeup" id="slide-1">
     <section class="slide-content"><h1 id="web-payments">Web Payments</h1>
 <h2 id="and-the-future-of-online-checkouts">and the future of online checkouts</h2>
 <h2 class="emoji">💳</h2>
@@ -679,41 +684,34 @@ h2.emoji {
 <p><a href="https://twitter.com/samsunginternet">@samsunginternet</a></p>
 </section>
   </div>
-  <div class="slide hidden  img-with-caption four-images" id="slide-3">
-    <section class="slide-content"><p><img src="images/very-long-checkout-form-1.png" alt="Very long form 1"> <img src="images/very-long-checkout-form-2.png" alt="Very long form 2"> <img src="images/very-long-checkout-form-3.png" alt="Very long form 3"> <img src="images/very-long-checkout-form-4.png" alt="Very long form 4"></p>
-<div class="caption"><a href="https://www.smashingmagazine.com/2013/03/designing-a-better-mobile-checkout-process/">www.smashingmagazine.com/2013/03/designing-a-better-mobile-checkout-process/</a></div></section>
+  <div class="slide hidden  img-with-caption five-images" id="slide-3">
+    <section class="slide-content"><p><img src="images/very-long-checkout-form-1.png" alt="Very long form 1"> <img src="images/very-long-checkout-form-2.png" alt="Very long form 2"> <img src="images/very-long-checkout-form-3.png" alt="Very long form 3"> <img src="images/very-long-checkout-form-4.png" alt="Very long form 4"> <img src="images/very-long-checkout-form-5.png" alt="Very long form 5"></p>
+<h3 id="-">😱</h3>
+</section>
   </div>
   <div class="slide hidden  img-with-caption" id="slide-4">
     <section class="slide-content"><p><img src="images/cart-abandonment-reasons-trans.png" alt="Cart abandoment reasons"></p>
 <div class="caption"><a href="https://baymard.com/lists/cart-abandonment-rate">baymard.com/lists/cart-abandonment-rate</a></div></section>
   </div>
-  <div class="slide hidden  img-with-caption" id="slide-5">
-    <section class="slide-content"><h2 id="what-if-your-web-browser-could-make-this-easier-">What if your web browser could make this easier...</h2>
-</section>
-  </div>
-  <div class="slide hidden  img-with-caption" id="slide-6">
-    <section class="slide-content"><h2 id="-for-users">...for users</h2>
+  <div class="slide hidden  img-with-caption what-if" id="slide-5">
+    <section class="slide-content"><h2 id="what-if-your-browser-could-help-">What if your browser could help?</h2>
 <ul>
-<li>Consistent experience</li>
-<li>Secure &quot;auto-complete&quot;</li>
+<li><strong><em>For users:</em></strong> consistent &amp; secure experience</li>
+<li><strong><em>For web devs:</em></strong> ready-to-use UI!</li>
 </ul>
+<div class="credit">By <a href="https://m.flickr.com/#/photos/mountainbread/2557214784">Yeonsang</a></div></section>
+  </div>
+  <div class="slide hidden  bg-white" id="slide-6">
+    <section class="slide-content"><p><a href="https://www.w3.org/TR/payment-request/"><img src="images/payment-request-api-spec.png" alt="Payment Request API spec"></a></p>
 </section>
   </div>
-  <div class="slide hidden  img-with-caption" id="slide-7">
-    <section class="slide-content"><h2 id="-for-us-web-devs">...for us web devs</h2>
-<ul>
-<li>Give us the UI!</li>
-</ul>
-</section>
-  </div>
-  <div class="slide hidden  img-with-header" id="slide-8">
-    <section class="slide-content"><h4 id="payment-request-api">Payment Request API</h4>
-<!-- TODO replace with live demo and backup image? -->
+  <div class="slide hidden" id="slide-7">
+    <section class="slide-content"><!-- TODO replace with live demo and backup image? -->
 
 <p><img src="images/payment-request-demo-1.gif" alt="Payment Request API demo"></p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-9">
+  <div class="slide hidden" id="slide-8">
     <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (<span class="hljs-built_in">window</span>.PaymentRequest) {
   <span class="hljs-comment">// We're good to go...</span>
 } <span class="hljs-keyword">else</span> {
@@ -721,7 +719,7 @@ h2.emoji {
 }</code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-10">
+  <div class="slide hidden" id="slide-9">
     <section class="slide-content"><h3 id="todo-update-to-newer-version">TODO update to newer version</h3>
 <pre><code class="lang-javascript"><span class="hljs-comment">// A couple of example payment networks (others exist too!)</span>
 <span class="hljs-keyword">var</span> methodData = [{supportedMethods: [<span class="hljs-string">'visa'</span>, <span class="hljs-string">'mastercard'</span>]}];
@@ -737,14 +735,14 @@ h2.emoji {
   });</code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-11">
+  <div class="slide hidden" id="slide-10">
     <section class="slide-content"><h3 id="todo-shipping-details-etc-">TODO: shipping details etc.</h3>
 <h3 id="todo-browser-support">TODO: browser support</h3>
 <h3 id="todo-apple-pay-for-the-web-">TODO: Apple Pay for the web?</h3>
 <h3 id="todo-slide-on-possible-future-developments">TODO: Slide on possible future developments</h3>
 </section>
   </div>
-  <div class="slide hidden" id="slide-12">
+  <div class="slide hidden" id="slide-11">
     <section class="slide-content"><h1 id="thanks-">Thanks! 🙏</h1>
 <div class="contact">
   <h3> <a href="https://twitter.com/poshaughnessy">@poshaughnessy</a> </h3>
