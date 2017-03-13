@@ -42,7 +42,7 @@ controls: false
 * <strong><em>For users:</em></strong> consistent & secure experience
 * <strong><em>For web devs:</em></strong> ready-to-use UI!
 
-<div class="credit">By [Yeonsang](https://m.flickr.com/#/photos/mountainbread/2557214784)</div>
+<div class="credit">By [Oha-Lau 2](https://m.flickr.com/#/photos/oha_lau2/4938316914)</div>
 
 -- bg-white
 

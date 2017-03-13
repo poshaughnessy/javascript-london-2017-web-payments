@@ -612,9 +612,9 @@ pre .xml .cdata {
 }
 
 .slide.what-if:before {
-  background-image: url(images/what-if.jpg);
-  -webkit-filter: blur(2px) brightness(0.25) grayscale(0.2);
-  filter: blur(3px) brightness(0.2) grayscale(0.2);
+  background-image: url(images/what-if2.jpg);
+  -webkit-filter: blur(2px) brightness(0.4) grayscale(0.1);
+  filter: blur(3px) brightness(0.4) grayscale(0.1);
 }
 
 .emoji {
