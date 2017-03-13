@@ -236,7 +236,7 @@ pre {
   font-size: 75%;
   line-height: 1.3;
   text-align: left;
-  padding: 1em;
+  padding: 2em;
   margin-bottom: 1em;
   background: #fafafa;
 }
@@ -605,6 +605,10 @@ pre .xml .cdata {
 
 /* Slide specific styles here */
 
+.three-images .slide-content p img {
+  max-width: 32%;
+}
+
 .four-images .slide-content p img {
   max-width: 24%;
 }
@@ -654,8 +658,8 @@ h2.emoji {
   color: #c4c3f5
 }
 
-.light-orange {
-  color: #ffa67c;
+.browser-support table {
+  margin-bottom: 2em;
 }
 
   </style>
@@ -706,9 +710,7 @@ h2.emoji {
 </section>
   </div>
   <div class="slide hidden" id="slide-7">
-    <section class="slide-content"><!-- TODO replace with live demo and backup image? -->
-
-<p><img src="images/payment-request-demo-1.gif" alt="Payment Request API demo"></p>
+    <section class="slide-content"><p><img src="images/payment-request.png" alt="Payment Request"></p>
 </section>
   </div>
   <div class="slide hidden" id="slide-8">
@@ -720,11 +722,22 @@ h2.emoji {
 </section>
   </div>
   <div class="slide hidden" id="slide-9">
-    <section class="slide-content"><h3 id="todo-update-to-newer-version">TODO update to newer version</h3>
-<pre><code class="lang-javascript"><span class="hljs-comment">// A couple of example payment networks (others exist too!)</span>
-<span class="hljs-keyword">var</span> methodData = [{supportedMethods: [<span class="hljs-string">'visa'</span>, <span class="hljs-string">'mastercard'</span>]}];
-<span class="hljs-keyword">var</span> details = {total: {label: <span class="hljs-string">'Something that costs money'</span>, amount: {currency: <span class="hljs-string">'GBP'</span>, value: <span class="hljs-string">'9.99'</span>}}};
-<span class="hljs-comment">// Show a native Payment Request UI and handle the result</span>
+    <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> methodData = <span class="hljs-keyword">var</span> methodData = [{
+  supportedMethods: [<span class="hljs-string">'basic-card'</span>],
+  data: {
+    supportedNetworks: [<span class="hljs-string">'visa'</span>, <span class="hljs-string">'mastercard'</span>, <span class="hljs-string">'amex'</span>],
+    supportedTypes: [<span class="hljs-string">'debit'</span>, <span class="hljs-string">'credit'</span>]
+  }
+}];
+
+<span class="hljs-keyword">var</span> details = {
+  total: {label: <span class="hljs-string">'Awesome socks'</span>, amount: {currency: <span class="hljs-string">'GBP'</span>, value: <span class="hljs-string">'9.99'</span>}}
+};</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-10">
+    <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-comment">// Show the payment UI and handle the result</span>
+
 <span class="hljs-keyword">new</span> PaymentRequest(methodData, details)
   .show()
   .then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">uiResult</span>) </span>{
@@ -735,14 +748,67 @@ h2.emoji {
   });</code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-10">
-    <section class="slide-content"><h3 id="todo-shipping-details-etc-">TODO: shipping details etc.</h3>
-<h3 id="todo-browser-support">TODO: browser support</h3>
-<h3 id="todo-apple-pay-for-the-web-">TODO: Apple Pay for the web?</h3>
+  <div class="slide hidden" id="slide-11">
+    <section class="slide-content"><!-- TODO replace with live demo and backup image? -->
+
+<p><img src="images/payment-request-demo-1.gif" alt="Payment Request API demo"></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-12">
+    <section class="slide-content"><h3 id="options">Options</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> details = {
+  total: {label: <span class="hljs-string">'Awesome socks'</span>, amount: {currency: <span class="hljs-string">'GBP'</span>, value: <span class="hljs-string">'9.99'</span>}},
+  shippingOptions: [
+    {
+      id: <span class="hljs-string">'standard'</span>,
+      label: <span class="hljs-string">'Standard shipping'</span>,
+      amount: {currency: <span class="hljs-string">'GBP'</span>, value: <span class="hljs-string">'1.50'</span>},
+      selected: <span class="hljs-literal">true</span>
+    }
+  ]
+};</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-13">
+    <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> options = {
+  requestPayerName: <span class="hljs-literal">true</span>,
+  requestPayerEmail: <span class="hljs-literal">true</span>,
+  requestPayerPhone: <span class="hljs-literal">true</span>,
+  requestShipping: <span class="hljs-literal">true</span>,
+  shippingType: <span class="hljs-string">'delivery'</span>
+};
+
+<span class="hljs-keyword">var</span> paymentRequest = <span class="hljs-keyword">new</span> PaymentRequest(methodData, details, options);</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-14">
+    <section class="slide-content"><!-- TODO replace with live demo and backup image? -->
+
+<p><img src="images/payment-request-demo-2.gif" alt="Payment Request API demo"></p>
+</section>
+  </div>
+  <div class="slide hidden  browser-support three-images" id="slide-15">
+    <section class="slide-content"><table>
+  <tr>
+    <td><img src="images/chrome.png" alt="Chrome"></td>
+    <td><img src="images/sbrowser5.0.png" alt="Samsung Internet"></td>
+    <td><img src="images/edge.png" alt="Edge Preview"></td>
+  </tr>
+  <tr>
+    <td>Chrome for Android v53+</td>
+    <td>Samsung Internet v5.0+</td>
+    <td>Edge Preview</td>
+  </tr>
+</table>
+
+<div class="caption"><a href="http://caniuse.com/#feat=payment-request">caniuse.com/#feat=payment-request</a></div></section>
+  </div>
+  <div class="slide hidden" id="slide-16">
+    <section class="slide-content"><h3 id="todo-mention-apple-pay-for-the-web-for-comparison-">TODO: Mention Apple Pay for the web for comparison?</h3>
 <h3 id="todo-slide-on-possible-future-developments">TODO: Slide on possible future developments</h3>
 </section>
   </div>
-  <div class="slide hidden" id="slide-11">
+  <div class="slide hidden" id="slide-17">
     <section class="slide-content"><h1 id="thanks-">Thanks! 🙏</h1>
 <div class="contact">
   <h3> <a href="https://twitter.com/poshaughnessy">@poshaughnessy</a> </h3>

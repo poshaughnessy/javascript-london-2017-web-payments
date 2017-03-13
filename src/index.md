@@ -50,9 +50,7 @@ controls: false
 
 --
 
-<!-- TODO replace with live demo and backup image? -->
-
-![Payment Request API demo](images/payment-request-demo-1.gif)
+![Payment Request](images/payment-request.png)
 
 --
 
@@ -66,13 +64,24 @@ if (window.PaymentRequest) {
 
 --
 
-### TODO update to newer version
+```javascript
+var methodData = var methodData = [{
+  supportedMethods: ['basic-card'],
+  data: {
+    supportedNetworks: ['visa', 'mastercard', 'amex'],
+    supportedTypes: ['debit', 'credit']
+  }
+}];
+
+var details = {
+  total: {label: 'Awesome socks', amount: {currency: 'GBP', value: '9.99'}}
+};
+```
+--
 
 ```javascript
-// A couple of example payment networks (others exist too!)
-var methodData = [{supportedMethods: ['visa', 'mastercard']}];
-var details = {total: {label: 'Something that costs money', amount: {currency: 'GBP', value: '9.99'}}};
-// Show a native Payment Request UI and handle the result
+// Show the payment UI and handle the result
+
 new PaymentRequest(methodData, details)
   .show()
   .then(function(uiResult) {
@@ -85,9 +94,69 @@ new PaymentRequest(methodData, details)
 
 --
 
-### TODO: shipping details etc.
-### TODO: browser support
-### TODO: Apple Pay for the web?
+<!-- TODO replace with live demo and backup image? -->
+
+![Payment Request API demo](images/payment-request-demo-1.gif)
+
+--
+
+### Options
+
+```javascript
+var details = {
+  total: {label: 'Awesome socks', amount: {currency: 'GBP', value: '9.99'}},
+  shippingOptions: [
+    {
+      id: 'standard',
+      label: 'Standard shipping',
+      amount: {currency: 'GBP', value: '1.50'},
+      selected: true
+    }
+  ]
+};
+```
+
+--
+
+```javascript
+var options = {
+  requestPayerName: true,
+  requestPayerEmail: true,
+  requestPayerPhone: true,
+  requestShipping: true,
+  shippingType: 'delivery'
+};
+
+var paymentRequest = new PaymentRequest(methodData, details, options);
+```
+
+--
+
+
+<!-- TODO replace with live demo and backup image? -->
+
+![Payment Request API demo](images/payment-request-demo-2.gif)
+
+-- browser-support three-images
+
+<table>
+  <tr>
+    <td>![Chrome](images/chrome.png)</td>
+    <td>![Samsung Internet](images/sbrowser5.0.png)</td>
+    <td>![Edge Preview](images/edge.png)</td>
+  </tr>
+  <tr>
+    <td>Chrome for Android v53+</td>
+    <td>Samsung Internet v5.0+</td>
+    <td>Edge Preview</td>
+  </tr>
+</table>
+
+<div class="caption">[caniuse.com/#feat=payment-request](http://caniuse.com/#feat=payment-request)</div>
+
+--
+
+### TODO: Mention Apple Pay for the web for comparison?
 ### TODO: Slide on possible future developments 
 
 --
