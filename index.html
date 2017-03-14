@@ -636,8 +636,20 @@ h2 + .quote {
   filter: blur(4px) brightness(0.1) grayscale(0.1);
 }
 
-.slide.socks:before {
-  background-image: url(images/socks.jpg);
+.slide.socks-pile:before {
+  background-image: url(images/socks-pile.jpg);
+  -webkit-filter: blur(2px) brightness(0.3) grayscale(0.1);
+  filter: blur(2px) brightness(0.3) grayscale(0.1);
+}
+
+.slide.socks-drawer:before {
+  background-image: url(images/socks-drawer.jpg);
+  -webkit-filter: blur(2px) brightness(0.3) grayscale(0.1);
+  filter: blur(2px) brightness(0.3) grayscale(0.1);
+}
+
+.slide.socks-stack:before {
+  background-image: url(images/socks-stack.jpg);
   -webkit-filter: blur(2px) brightness(0.3) grayscale(0.1);
   filter: blur(2px) brightness(0.3) grayscale(0.1);
 }
@@ -657,6 +669,7 @@ h2.emoji {
 .what-if li {
   font-size: 1.3em;
   margin-top: 1em;
+  text-shadow: 1px 1px 1px #666;
 }
 
 .what-if ul strong {
@@ -723,9 +736,11 @@ h2.emoji {
     <section class="slide-content"><p><a href="https://www.w3.org/TR/payment-request/"><img src="images/payment-request-api-spec.png" alt="Payment Request API spec"></a></p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-6">
+  <div class="slide hidden  socks-drawer" id="slide-6">
     <section class="slide-content"><h2 id="1-our-first-sock-sale">1. Our first sock sale</h2>
-<h3 class="pun">&ldquo;Getting our <strong>foot</strong> in the door&rdquo;</h3></section>
+<h3 class="pun">&ldquo;Getting our <strong>foot</strong> in the door&rdquo;</h3>
+
+<div class="credit">By <a href="https://www.flickr.com/photos/sugarpants/5349120073">Nikol Lohr</a></div></section>
   </div>
   <div class="slide hidden" id="slide-7">
     <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (<span class="hljs-built_in">window</span>.PaymentRequest) {
@@ -769,9 +784,11 @@ h2.emoji {
   <div class="slide hidden" id="slide-10">
     <section class="slide-content"><video src="videos/socks-megastore-simple.mp4" controls/></section>
   </div>
-  <div class="slide hidden" id="slide-11">
+  <div class="slide hidden  socks-stack" id="slide-11">
     <section class="slide-content"><h2 id="2-adding-customisations">2. Adding customisations</h2>
-<h3 class="pun">&ldquo;Thinking outside the <strong>socks</strong>&rdquo;</h3></section>
+<h3 class="pun">&ldquo;Thinking outside the <strong>socks</strong>&rdquo;</h3>
+
+<div class="credit">By <a href="https://www.flickr.com/photos/gusgreeper/8329453791">Gus Greeper</a></div></section>
   </div>
   <div class="slide hidden" id="slide-12">
     <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> details = {
@@ -839,12 +856,14 @@ h2.emoji {
   </div>
   <div class="slide hidden  img-with-header" id="slide-17">
     <section class="slide-content"><p><img src="images/chrome-desktop-socks.png" alt="Chrome desktop UI"></p>
-<h4 class="pun">Good things are <strong>afoot</strong> on the desktop</h4>
+<h4 class="pun">&ldquo;Good things are <strong>afoot</strong> on the desktop&rdquo;</h4>
 
 <div class="caption">Currently <a href="https://twitter.com/poshaughnessy/status/841425232875286529">behind flags</a> in Chrome Canary</div></section>
   </div>
   <div class="slide hidden  align-top img-with-caption" id="slide-18">
     <section class="slide-content"><p><img src="images/samsung-internet-beta-phone-blur.png" alt="Samsung Internet icon on homescreen"></p>
+<h3 class="pun">&ldquo;A <strong>shoe-in</strong> for your homescreen?</h3>
+
 <p><a href="http://bit.ly/samsung-internet-open-beta">bit.ly/samsung-internet-open-beta</a></p>
 </section>
   </div>
@@ -858,9 +877,9 @@ h2.emoji {
     <section class="slide-content"><h2 id="further-resources">Further resources</h2>
 </section>
   </div>
-  <div class="slide hidden  socks" id="slide-21">
+  <div class="slide hidden  socks-pile" id="slide-21">
     <section class="slide-content"><h1 id="thanks-">Thanks!</h1>
-<h3 class="pun">&ldquo;Shoe wants to ask a question?&rdquo;</h3>
+<h2 class="pun">&ldquo;Shoe wants to ask a question?&rdquo;</h2>
 
 <div class="contact">
   <h3> <a href="https://twitter.com/poshaughnessy">@poshaughnessy</a> </h3>
@@ -1078,8 +1097,8 @@ if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
 }
 
 
-/* Service worker registration - added by Peter */
-
+/* Service worker registration - added by Peter, removed for now */
+/*
 if (navigator.serviceWorker) {
 
   navigator.serviceWorker.register('sw.js')
@@ -1091,7 +1110,7 @@ if (navigator.serviceWorker) {
     });
 
 }
-
+*/
   </script>
 </body>
 </html>
