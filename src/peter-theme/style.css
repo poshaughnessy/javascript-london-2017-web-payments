@@ -552,13 +552,17 @@ pre .xml .cdata {
 }
 
 .img-with-header img {
-  max-height: calc(100vh - 6em);
+  max-height: calc(100vh - 8em);
 }
 
-.quote h3 {
-  margin-top: 2em;
+.pun {
   color: #c4c3f5;
   font-size: 1.1em;
+  font-style: italic;
+}
+
+h2 + .quote {
+  margin-top: 2em;
 }
 
 .align-top .slide-content {
@@ -653,6 +657,7 @@ h2.emoji {
 
 .what-if ul strong {
   padding-right: 10px;
+  color: #c4c3f5;
 }
 
 .slide.bg-white:before {
@@ -669,5 +674,5 @@ h2.emoji {
 }
 
 .browser-support table {
-  margin-bottom: 2em;
+  margin: 2em 0;
 }

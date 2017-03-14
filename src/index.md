@@ -21,7 +21,7 @@ controls: false
 
 ![Very long form 1](images/very-long-checkout-form-1.png) ![Very long form 2](images/very-long-checkout-form-2.png) ![Very long form 3](images/very-long-checkout-form-3.png) ![Very long form 4](images/very-long-checkout-form-4.png) ![Very long form 5](images/very-long-checkout-form-5.png)
 
-### 😱
+#### &ldquo;I just want to buy some socks&rdquo; 😱
 
 -- img-with-caption
 
@@ -42,11 +42,11 @@ controls: false
 
 [![Payment Request API spec](images/payment-request-api-spec.png)](https://www.w3.org/TR/payment-request/)
 
--- quote
+--
 
-## Simple sock selling demo 
+## 1. Our first sock sale
 
-### &ldquo;Starting at the <em>foot</em> of the mountain&rdquo;
+<h3 class="pun">&ldquo;Getting our <strong>foot</strong> in the door&rdquo;</h3>
 
 --
 
@@ -96,11 +96,11 @@ new PaymentRequest(methodData, details)
 
 <video src="videos/socks-megastore-simple.mp4" controls/>
 
--- quote
+--
 
-## Adding some options
+## 2. Adding customisations
 
-### &ldquo;Thinking outside the socks&rdquo;
+<h3 class="pun">&ldquo;Thinking outside the <strong>socks</strong>&rdquo;</h3>
 
 --
 
@@ -158,6 +158,8 @@ new PaymentRequest(methodData, details, options)
 
 -- browser-support three-images
 
+## Browser support
+
 <table>
   <tr>
     <td>![Chrome](images/chrome.png)</td>
@@ -173,9 +175,11 @@ new PaymentRequest(methodData, details, options)
 
 <div class="caption">[caniuse.com/#feat=payment-request](http://caniuse.com/#feat=payment-request)</div>
 
--- img-with-caption
+-- img-with-header
 
-![Chrome desktop UI](images/chrome-desktop.png)
+![Chrome desktop UI](images/chrome-desktop-socks.png)
+
+<h4 class="pun">Good things are <strong>afoot</strong> on the desktop</h4>
 
 <div class="caption">Currently [behind flags](https://twitter.com/poshaughnessy/status/841425232875286529) in Chrome Canary</div>
 
@@ -185,20 +189,24 @@ new PaymentRequest(methodData, details, options)
 
 [bit.ly/samsung-internet-open-beta](http://bit.ly/samsung-internet-open-beta)
 
--- img-with-caption
+-- img-with-header
 
 ![Polykart](images/polykart.png)
+
+<h3 class="pun">&ldquo;A lock, <strong>sock</strong> and barrel example&rdquo;</h3>
 
 <div class="caption">[polykart-credential-payment.appspot.com](https://polykart-credential-payment.appspot.com/)</div>
 
 --
 
-### TODO: Mention Apple Pay for the web for comparison?
-### TODO: Slide on possible future developments 
+## Further resources
+
 
 -- socks
 
-# Thanks! 🙏
+# Thanks!
+
+<h3 class="pun">&ldquo;Shoe wants to ask a question?&rdquo;</h3>
 
 <div class="contact">
   <h3> [@poshaughnessy](https://twitter.com/poshaughnessy) </h3>
