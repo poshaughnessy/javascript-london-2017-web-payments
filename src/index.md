@@ -42,11 +42,13 @@ controls: false
 
 [![Payment Request API spec](images/payment-request-api-spec.png)](https://www.w3.org/TR/payment-request/)
 
---
+-- socks-drawer
 
 ## 1. Our first sock sale
 
 <h3 class="pun">&ldquo;Getting our <strong>foot</strong> in the door&rdquo;</h3>
+
+<div class="credit">By [Nikol Lohr](https://www.flickr.com/photos/sugarpants/5349120073)</div>
 
 --
 
@@ -96,11 +98,13 @@ new PaymentRequest(methodData, details)
 
 <video src="videos/socks-megastore-simple.mp4" controls/>
 
---
+-- socks-stack
 
 ## 2. Adding customisations
 
 <h3 class="pun">&ldquo;Thinking outside the <strong>socks</strong>&rdquo;</h3>
+
+<div class="credit">By [Gus Greeper](https://www.flickr.com/photos/gusgreeper/8329453791)</div>
 
 --
 
@@ -179,13 +183,15 @@ new PaymentRequest(methodData, details, options)
 
 ![Chrome desktop UI](images/chrome-desktop-socks.png)
 
-<h4 class="pun">Good things are <strong>afoot</strong> on the desktop</h4>
+<h4 class="pun">&ldquo;Good things are <strong>afoot</strong> on the desktop&rdquo;</h4>
 
 <div class="caption">Currently [behind flags](https://twitter.com/poshaughnessy/status/841425232875286529) in Chrome Canary</div>
 
 -- align-top img-with-caption
 
 ![Samsung Internet icon on homescreen](images/samsung-internet-beta-phone-blur.png)
+
+<h3 class="pun">&ldquo;A <strong>shoe-in</strong> for your homescreen?</h3>
 
 [bit.ly/samsung-internet-open-beta](http://bit.ly/samsung-internet-open-beta)
 
@@ -202,11 +208,11 @@ new PaymentRequest(methodData, details, options)
 ## Further resources
 
 
--- socks
+-- socks-pile
 
 # Thanks!
 
-<h3 class="pun">&ldquo;Shoe wants to ask a question?&rdquo;</h3>
+<h2 class="pun">&ldquo;Shoe wants to ask a question?&rdquo;</h2>
 
 <div class="contact">
   <h3> [@poshaughnessy](https://twitter.com/poshaughnessy) </h3>

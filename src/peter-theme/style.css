@@ -628,8 +628,20 @@ h2 + .quote {
   filter: blur(4px) brightness(0.1) grayscale(0.1);
 }
 
-.slide.socks:before {
-  background-image: url(images/socks.jpg);
+.slide.socks-pile:before {
+  background-image: url(images/socks-pile.jpg);
+  -webkit-filter: blur(2px) brightness(0.3) grayscale(0.1);
+  filter: blur(2px) brightness(0.3) grayscale(0.1);
+}
+
+.slide.socks-drawer:before {
+  background-image: url(images/socks-drawer.jpg);
+  -webkit-filter: blur(2px) brightness(0.3) grayscale(0.1);
+  filter: blur(2px) brightness(0.3) grayscale(0.1);
+}
+
+.slide.socks-stack:before {
+  background-image: url(images/socks-stack.jpg);
   -webkit-filter: blur(2px) brightness(0.3) grayscale(0.1);
   filter: blur(2px) brightness(0.3) grayscale(0.1);
 }
@@ -649,6 +661,7 @@ h2.emoji {
 .what-if li {
   font-size: 1.3em;
   margin-top: 1em;
+  text-shadow: 1px 1px 1px #666;
 }
 
 .what-if ul strong {
