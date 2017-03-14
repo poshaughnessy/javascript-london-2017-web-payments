@@ -75,7 +75,8 @@ body {
   margin-bottom: 0.5em;
 }
 
-img {
+img,
+video {
   max-width: 100%;
   max-height: 100%;
   max-height: calc(100vh - 3em); /* Allow space for captions by default */
@@ -562,6 +563,12 @@ pre .xml .cdata {
   max-height: calc(100vh - 6em);
 }
 
+.quote h3 {
+  margin-top: 2em;
+  color: #c4c3f5;
+  font-size: 1.1em;
+}
+
 .align-top .slide-content {
   padding: 0;
   height: 100%;
@@ -715,9 +722,9 @@ h2.emoji {
     <section class="slide-content"><p><a href="https://www.w3.org/TR/payment-request/"><img src="images/payment-request-api-spec.png" alt="Payment Request API spec"></a></p>
 </section>
   </div>
-  <div class="slide hidden  img-with-header" id="slide-6">
-    <section class="slide-content"><h2 id="todo-replace-with-socks-image-hello-sock-world">TODO replace with socks image. Hello Sock World</h2>
-<p><img src="images/payment-request.png" alt="Payment Request"></p>
+  <div class="slide hidden  quote" id="slide-6">
+    <section class="slide-content"><h2 id="simple-sock-selling-demo">Simple sock selling demo</h2>
+<h3 id="-ldquo-starting-at-the-em-foot-em-of-the-mountain-rdquo-">&ldquo;Starting at the <em>foot</em> of the mountain&rdquo;</h3>
 </section>
   </div>
   <div class="slide hidden" id="slide-7">
@@ -760,12 +767,11 @@ h2.emoji {
 </section>
   </div>
   <div class="slide hidden" id="slide-10">
-    <section class="slide-content"><h2 id="todo-replace-with-socks-simple-video">TODO replace with socks simple video</h2>
-<p><img src="images/payment-request-demo-1.gif" alt="Payment Request API demo"></p>
-</section>
+    <section class="slide-content"><video src="videos/socks-megastore-simple.mp4" controls/></section>
   </div>
-  <div class="slide hidden" id="slide-11">
-    <section class="slide-content"><h2 id="todo-socks-options-image-thinking-outside-the-socks-">TODO socks options image. Thinking outside the socks.</h2>
+  <div class="slide hidden  quote" id="slide-11">
+    <section class="slide-content"><h2 id="adding-some-options">Adding some options</h2>
+<h3 id="-ldquo-thinking-outside-the-socks-rdquo-">&ldquo;Thinking outside the socks&rdquo;</h3>
 </section>
   </div>
   <div class="slide hidden" id="slide-12">
@@ -805,8 +811,7 @@ h2.emoji {
   requestPayerName: <span class="hljs-literal">true</span>,
   requestPayerEmail: <span class="hljs-literal">true</span>,
   requestPayerPhone: <span class="hljs-literal">true</span>,
-  requestShipping: <span class="hljs-literal">true</span>,
-  shippingType: <span class="hljs-string">'delivery'</span>
+  requestShipping: <span class="hljs-literal">true</span>
 };
 
 <span class="hljs-keyword">new</span> PaymentRequest(methodData, details, options)
@@ -814,9 +819,7 @@ h2.emoji {
 </section>
   </div>
   <div class="slide hidden" id="slide-15">
-    <section class="slide-content"><h2 id="todo-replace-with-socks-options-video">TODO replace with socks options video</h2>
-<p><img src="images/payment-request-demo-2.gif" alt="Payment Request API demo"></p>
-</section>
+    <section class="slide-content"><video src="videos/socks-megastore-options.mp4" controls/></section>
   </div>
   <div class="slide hidden  browser-support three-images" id="slide-16">
     <section class="slide-content"><table>

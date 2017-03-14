@@ -42,11 +42,11 @@ controls: false
 
 [![Payment Request API spec](images/payment-request-api-spec.png)](https://www.w3.org/TR/payment-request/)
 
--- img-with-header
+-- quote
 
-## TODO replace with socks image. Hello Sock World
+## Simple sock selling demo 
 
-![Payment Request](images/payment-request.png)
+### &ldquo;Starting at the <em>foot</em> of the mountain&rdquo;
 
 --
 
@@ -94,13 +94,13 @@ new PaymentRequest(methodData, details)
 
 --
 
-## TODO replace with socks simple video
+<video src="videos/socks-megastore-simple.mp4" controls/>
 
-![Payment Request API demo](images/payment-request-demo-1.gif)
+-- quote
 
---
+## Adding some options
 
-## TODO socks options image. Thinking outside the socks.
+### &ldquo;Thinking outside the socks&rdquo;
 
 --
 
@@ -145,8 +145,7 @@ var options = {
   requestPayerName: true,
   requestPayerEmail: true,
   requestPayerPhone: true,
-  requestShipping: true,
-  shippingType: 'delivery'
+  requestShipping: true
 };
 
 new PaymentRequest(methodData, details, options)
@@ -155,10 +154,7 @@ new PaymentRequest(methodData, details, options)
 
 --
 
-
-## TODO replace with socks options video
-
-![Payment Request API demo](images/payment-request-demo-2.gif)
+<video src="videos/socks-megastore-options.mp4" controls/>
 
 -- browser-support three-images
 
