@@ -236,7 +236,7 @@ pre {
   font-size: 75%;
   line-height: 1.3;
   text-align: left;
-  padding: 2em;
+  padding: 1em 2em;
   margin-bottom: 1em;
   background: #fafafa;
 }
@@ -619,14 +619,20 @@ pre .xml .cdata {
 
 .slide.card-closeup:before {
   background-image: url(images/card-closeup-purple.jpg);
-  -webkit-filter: blur(8px) brightness(0.25);
-  filter: blur(8px) brightness(0.25);
+  -webkit-filter: blur(6px) brightness(0.3);
+  filter: blur(6px) brightness(0.3);
 }
 
 .slide.what-if:before {
   background-image: url(images/help.jpg);
   -webkit-filter: blur(4px) brightness(0.1) grayscale(0.1);
   filter: blur(4px) brightness(0.1) grayscale(0.1);
+}
+
+.slide.socks:before {
+  background-image: url(images/socks.jpg);
+  -webkit-filter: blur(2px) brightness(0.3) grayscale(0.1);
+  filter: blur(2px) brightness(0.3) grayscale(0.1);
 }
 
 .emoji {
@@ -688,21 +694,16 @@ h2.emoji {
   <p><a href="https://twitter.com/poshaughnessy">@poshaughnessy</a></p>
 </div></section>
   </div>
-  <div class="slide hidden  align-top img-with-caption" id="slide-2">
-    <section class="slide-content"><p><img src="images/samsung-internet-phone-blur.png" alt="Samsung Internet icon on homescreen"></p>
-<p><a href="https://twitter.com/samsunginternet">@samsunginternet</a></p>
-</section>
-  </div>
-  <div class="slide hidden  img-with-caption five-images" id="slide-3">
+  <div class="slide hidden  img-with-caption five-images" id="slide-2">
     <section class="slide-content"><p><img src="images/very-long-checkout-form-1.png" alt="Very long form 1"> <img src="images/very-long-checkout-form-2.png" alt="Very long form 2"> <img src="images/very-long-checkout-form-3.png" alt="Very long form 3"> <img src="images/very-long-checkout-form-4.png" alt="Very long form 4"> <img src="images/very-long-checkout-form-5.png" alt="Very long form 5"></p>
 <h3 id="-">😱</h3>
 </section>
   </div>
-  <div class="slide hidden  img-with-caption" id="slide-4">
+  <div class="slide hidden  img-with-caption" id="slide-3">
     <section class="slide-content"><p><img src="images/cart-abandonment-reasons-trans.png" alt="Cart abandoment reasons"></p>
 <div class="caption"><a href="https://baymard.com/lists/cart-abandonment-rate">baymard.com/lists/cart-abandonment-rate</a></div></section>
   </div>
-  <div class="slide hidden  img-with-caption what-if" id="slide-5">
+  <div class="slide hidden  img-with-caption what-if" id="slide-4">
     <section class="slide-content"><h2 id="what-if-your-browser-could-help-">What if your browser could help?</h2>
 <ul>
 <li><strong><em>For users:</em></strong> consistent &amp; secure experience</li>
@@ -710,15 +711,16 @@ h2.emoji {
 </ul>
 <div class="credit">By <a href="https://www.flickr.com/photos/49889874@N05/5645164344">Marc Falardeau</a></div></section>
   </div>
-  <div class="slide hidden  bg-white" id="slide-6">
+  <div class="slide hidden  bg-white" id="slide-5">
     <section class="slide-content"><p><a href="https://www.w3.org/TR/payment-request/"><img src="images/payment-request-api-spec.png" alt="Payment Request API spec"></a></p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-7">
-    <section class="slide-content"><p><img src="images/payment-request.png" alt="Payment Request"></p>
+  <div class="slide hidden  img-with-header" id="slide-6">
+    <section class="slide-content"><h2 id="todo-replace-with-socks-image-hello-sock-world">TODO replace with socks image. Hello Sock World</h2>
+<p><img src="images/payment-request.png" alt="Payment Request"></p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-8">
+  <div class="slide hidden" id="slide-7">
     <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (<span class="hljs-built_in">window</span>.PaymentRequest) {
   <span class="hljs-comment">// We're good to go...</span>
 } <span class="hljs-keyword">else</span> {
@@ -726,43 +728,67 @@ h2.emoji {
 }</code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-9">
+  <div class="slide hidden" id="slide-8">
     <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> methodData = <span class="hljs-keyword">var</span> methodData = [{
+  <span class="hljs-comment">// NB. To support older format, include networks here </span>
   supportedMethods: [<span class="hljs-string">'basic-card'</span>],
   data: {
-    supportedNetworks: [<span class="hljs-string">'visa'</span>, <span class="hljs-string">'mastercard'</span>, <span class="hljs-string">'amex'</span>],
-    supportedTypes: [<span class="hljs-string">'debit'</span>, <span class="hljs-string">'credit'</span>]
+    <span class="hljs-comment">// Examples. Others are available too!</span>
+    supportedNetworks: [<span class="hljs-string">'visa'</span>, <span class="hljs-string">'mastercard'</span>, <span class="hljs-string">'amex'</span>]
   }
 }];
 
 <span class="hljs-keyword">var</span> details = {
-  total: {label: <span class="hljs-string">'Socks'</span>, amount: {currency: <span class="hljs-string">'GBP'</span>, value: <span class="hljs-string">'12.00'</span>}}
+  total: {
+    label: <span class="hljs-string">'Socks'</span>, 
+    amount: {currency: <span class="hljs-string">'GBP'</span>, value: <span class="hljs-string">'12.00'</span>}
+  }
 };</code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-10">
+  <div class="slide hidden" id="slide-9">
     <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-comment">// Show the payment UI and handle the result</span>
 
 <span class="hljs-keyword">new</span> PaymentRequest(methodData, details)
   .show()
   .then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">uiResult</span>) </span>{
-    processPayment(uiResult);
+    myPaymentProcessor(uiResult);
   })
   .catch(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error</span>) </span>{
-    handlePaymentError(error);
+    myErrorHandler(error);
   });</code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-11">
-    <section class="slide-content"><!-- TODO replace with live demo and backup image? -->
-
+  <div class="slide hidden" id="slide-10">
+    <section class="slide-content"><h2 id="todo-replace-with-socks-simple-video">TODO replace with socks simple video</h2>
 <p><img src="images/payment-request-demo-1.gif" alt="Payment Request API demo"></p>
 </section>
   </div>
+  <div class="slide hidden" id="slide-11">
+    <section class="slide-content"><h2 id="todo-socks-options-image-thinking-outside-the-socks-">TODO socks options image. Thinking outside the socks.</h2>
+</section>
+  </div>
   <div class="slide hidden" id="slide-12">
-    <section class="slide-content"><h3 id="options">Options</h3>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> details = {
-  total: {label: <span class="hljs-string">'Socks'</span>, amount: {currency: <span class="hljs-string">'GBP'</span>, value: <span class="hljs-string">'12.00'</span>}},
+    <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> details = {
+  displayItems: [
+    {
+      label: <span class="hljs-string">"Socks"</span>,
+      amount: { currency: <span class="hljs-string">"GBP"</span>, value : <span class="hljs-string">"12.00"</span> },
+    },
+    {
+      label: <span class="hljs-string">"Loyalty discount"</span>,
+      amount: { currency: <span class="hljs-string">"GBP"</span>, value : <span class="hljs-string">"-1.00"</span> },
+    }
+  ],
+  total: {
+    label: <span class="hljs-string">'Total'</span>, 
+    amount: {currency: <span class="hljs-string">'GBP'</span>, value: <span class="hljs-string">'11.00'</span>}
+  },
+  ...</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-13">
+    <section class="slide-content"><pre><code class="lang-javascript">  ...
   shippingOptions: [
     {
       id: <span class="hljs-string">'standard'</span>,
@@ -774,7 +800,7 @@ h2.emoji {
 };</code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-13">
+  <div class="slide hidden" id="slide-14">
     <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> options = {
   requestPayerName: <span class="hljs-literal">true</span>,
   requestPayerEmail: <span class="hljs-literal">true</span>,
@@ -783,16 +809,16 @@ h2.emoji {
   shippingType: <span class="hljs-string">'delivery'</span>
 };
 
-<span class="hljs-keyword">var</span> paymentRequest = <span class="hljs-keyword">new</span> PaymentRequest(methodData, details, options);</code></pre>
+<span class="hljs-keyword">new</span> PaymentRequest(methodData, details, options)
+  ...</code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-14">
-    <section class="slide-content"><!-- TODO replace with live demo and backup image? -->
-
+  <div class="slide hidden" id="slide-15">
+    <section class="slide-content"><h2 id="todo-replace-with-socks-options-video">TODO replace with socks options video</h2>
 <p><img src="images/payment-request-demo-2.gif" alt="Payment Request API demo"></p>
 </section>
   </div>
-  <div class="slide hidden  browser-support three-images" id="slide-15">
+  <div class="slide hidden  browser-support three-images" id="slide-16">
     <section class="slide-content"><table>
   <tr>
     <td><img src="images/chrome.png" alt="Chrome"></td>
@@ -808,17 +834,32 @@ h2.emoji {
 
 <div class="caption"><a href="http://caniuse.com/#feat=payment-request">caniuse.com/#feat=payment-request</a></div></section>
   </div>
-  <div class="slide hidden" id="slide-16">
+  <div class="slide hidden  img-with-caption" id="slide-17">
+    <section class="slide-content"><p><img src="images/chrome-desktop.png" alt="Chrome desktop UI"></p>
+<div class="caption">Currently <a href="https://twitter.com/poshaughnessy/status/841425232875286529">behind flags</a> in Chrome Canary</div></section>
+  </div>
+  <div class="slide hidden  align-top img-with-caption" id="slide-18">
+    <section class="slide-content"><p><img src="images/samsung-internet-beta-phone-blur.png" alt="Samsung Internet icon on homescreen"></p>
+<p><a href="http://bit.ly/samsung-internet-open-beta">bit.ly/samsung-internet-open-beta</a></p>
+</section>
+  </div>
+  <div class="slide hidden  img-with-caption" id="slide-19">
+    <section class="slide-content"><p><img src="images/polykart.png" alt="Polykart"></p>
+<div class="caption"><a href="https://polykart-credential-payment.appspot.com/">polykart-credential-payment.appspot.com</a></div></section>
+  </div>
+  <div class="slide hidden" id="slide-20">
     <section class="slide-content"><h3 id="todo-mention-apple-pay-for-the-web-for-comparison-">TODO: Mention Apple Pay for the web for comparison?</h3>
 <h3 id="todo-slide-on-possible-future-developments">TODO: Slide on possible future developments</h3>
 </section>
   </div>
-  <div class="slide hidden" id="slide-17">
+  <div class="slide hidden  socks" id="slide-21">
     <section class="slide-content"><h1 id="thanks-">Thanks! 🙏</h1>
 <div class="contact">
   <h3> <a href="https://twitter.com/poshaughnessy">@poshaughnessy</a> </h3>
   <h3> <a href="https://twitter.com/samsunginternet">@samsunginternet</a> </h3>
-</div></section>
+</div>
+
+<div class="credit">By <a href="https://www.flickr.com/photos/darkmoon/3572345244">darkmoon</a></div></section>
   </div>
 
 
