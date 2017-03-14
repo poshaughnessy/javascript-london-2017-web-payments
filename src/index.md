@@ -17,12 +17,6 @@ controls: false
   <p>[@poshaughnessy](https://twitter.com/poshaughnessy)</p>
 </div>
 
--- align-top img-with-caption
-
-![Samsung Internet icon on homescreen](images/samsung-internet-phone-blur.png)
-
-[@samsunginternet](https://twitter.com/samsunginternet)
-
 -- img-with-caption five-images
 
 ![Very long form 1](images/very-long-checkout-form-1.png) ![Very long form 2](images/very-long-checkout-form-2.png) ![Very long form 3](images/very-long-checkout-form-3.png) ![Very long form 4](images/very-long-checkout-form-4.png) ![Very long form 5](images/very-long-checkout-form-5.png)
@@ -48,7 +42,9 @@ controls: false
 
 [![Payment Request API spec](images/payment-request-api-spec.png)](https://www.w3.org/TR/payment-request/)
 
---
+-- img-with-header
+
+## TODO replace with socks image. Hello Sock World
 
 ![Payment Request](images/payment-request.png)
 
@@ -66,15 +62,19 @@ if (window.PaymentRequest) {
 
 ```javascript
 var methodData = var methodData = [{
+  // NB. To support older format, include networks here 
   supportedMethods: ['basic-card'],
   data: {
-    supportedNetworks: ['visa', 'mastercard', 'amex'],
-    supportedTypes: ['debit', 'credit']
+    // Examples. Others are available too!
+    supportedNetworks: ['visa', 'mastercard', 'amex']
   }
 }];
 
 var details = {
-  total: {label: 'Socks', amount: {currency: 'GBP', value: '12.00'}}
+  total: {
+    label: 'Socks', 
+    amount: {currency: 'GBP', value: '12.00'}
+  }
 };
 ```
 --
@@ -85,26 +85,48 @@ var details = {
 new PaymentRequest(methodData, details)
   .show()
   .then(function(uiResult) {
-    processPayment(uiResult);
+    myPaymentProcessor(uiResult);
   })
   .catch(function(error) {
-    handlePaymentError(error);
+    myErrorHandler(error);
   });
 ```
 
 --
 
-<!-- TODO replace with live demo and backup image? -->
+## TODO replace with socks simple video
 
 ![Payment Request API demo](images/payment-request-demo-1.gif)
 
 --
 
-### Options
+## TODO socks options image. Thinking outside the socks.
+
+--
 
 ```javascript
 var details = {
-  total: {label: 'Socks', amount: {currency: 'GBP', value: '12.00'}},
+  displayItems: [
+    {
+      label: "Socks",
+      amount: { currency: "GBP", value : "12.00" },
+    },
+    {
+      label: "Loyalty discount",
+      amount: { currency: "GBP", value : "-1.00" },
+    }
+  ],
+  total: {
+    label: 'Total', 
+    amount: {currency: 'GBP', value: '11.00'}
+  },
+  ...
+```
+  
+--
+
+```javascript
+  ...
   shippingOptions: [
     {
       id: 'standard',
@@ -127,13 +149,14 @@ var options = {
   shippingType: 'delivery'
 };
 
-var paymentRequest = new PaymentRequest(methodData, details, options);
+new PaymentRequest(methodData, details, options)
+  ...
 ```
 
 --
 
 
-<!-- TODO replace with live demo and backup image? -->
+## TODO replace with socks options video
 
 ![Payment Request API demo](images/payment-request-demo-2.gif)
 
@@ -154,12 +177,30 @@ var paymentRequest = new PaymentRequest(methodData, details, options);
 
 <div class="caption">[caniuse.com/#feat=payment-request](http://caniuse.com/#feat=payment-request)</div>
 
+-- img-with-caption
+
+![Chrome desktop UI](images/chrome-desktop.png)
+
+<div class="caption">Currently [behind flags](https://twitter.com/poshaughnessy/status/841425232875286529) in Chrome Canary</div>
+
+-- align-top img-with-caption
+
+![Samsung Internet icon on homescreen](images/samsung-internet-beta-phone-blur.png)
+
+[bit.ly/samsung-internet-open-beta](http://bit.ly/samsung-internet-open-beta)
+
+-- img-with-caption
+
+![Polykart](images/polykart.png)
+
+<div class="caption">[polykart-credential-payment.appspot.com](https://polykart-credential-payment.appspot.com/)</div>
+
 --
 
 ### TODO: Mention Apple Pay for the web for comparison?
 ### TODO: Slide on possible future developments 
 
---
+-- socks
 
 # Thanks! 🙏
 
@@ -167,3 +208,5 @@ var paymentRequest = new PaymentRequest(methodData, details, options);
   <h3> [@poshaughnessy](https://twitter.com/poshaughnessy) </h3>
   <h3> [@samsunginternet](https://twitter.com/samsunginternet) </h3>
 </div>
+
+<div class="credit">By [darkmoon](https://www.flickr.com/photos/darkmoon/3572345244)</div>
