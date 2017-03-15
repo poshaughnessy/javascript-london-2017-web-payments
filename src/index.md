@@ -21,6 +21,12 @@ controls: false
 
 #### &ldquo;I just want to buy some socks&rdquo; 😱
 
+--
+
+## 66% fewer conversions on mobile than desktop
+
+<div class="caption">Source: [Google Chrome](https://twitter.com/chromiumdev/status/796809709281939456)</div>
+
 -- img-with-caption
 
 ![Cart abandoment reasons](images/cart-abandonment-reasons-trans.png)
