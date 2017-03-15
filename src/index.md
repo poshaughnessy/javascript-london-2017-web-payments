@@ -193,6 +193,20 @@ new PaymentRequest(methodData, details, options)
 
 [bit.ly/samsung-internet-open-beta](http://bit.ly/samsung-internet-open-beta)
 
+--
+
+## Payment Gateways
+
+TODO
+
+-- logos bg-white
+
+### Early supporters include...
+
+<div class="flex">![Groupon](images/groupon.png) ![Mobify](images/mobify.png) ![Shopify](images/shopify.png) ![Washington Post](images/washingtonpost.png) ![Woo Commerce](images/woocommerce.png) ![WWF](images/wwf.png)</div>
+
+<h3 class="pun">&ldquo;Not just socks!&rdquo;</h3>
+
 -- img-with-header
 
 ![Polykart](images/polykart.png)
@@ -203,8 +217,23 @@ new PaymentRequest(methodData, details, options)
 
 --
 
+## Future possibilities...
+
+<h3 class="pun">&ldquo;It <strong>wool</strong> be great!&rdquo;</h3>
+
+* Gift cards / coupons
+* Mobile payment app integration
+* Secure tokenisation
+
+--
+
 ## Further resources
 
+<h3 class="pun">&ldquo;Following the same <strong>thread</strong>...&rdquo;</h3>
+
+* [bit.ly/how-to-take-web-payments](medium.com/samsung-internet-dev/how-to-take-payments-on-the-web-with-the-payment-request-api-a523f6fc7c1f)
+* [bit.ly/payment-request-api-guide](https://developers.google.com/web/fundamentals/discovery-and-monetization/payment-request/)
+* [bit.ly/payment-request-updates](https://developers.google.com/web/updates/2017/01/payment-request-updates)
 
 -- bg-fade socks-pile
 

@@ -563,7 +563,7 @@ pre .xml .cdata {
   max-height: calc(100vh - 8em);
 }
 
-.pun {
+.slide .pun {
   color: #c4c3f5;
   font-size: 1.1em;
   font-style: italic;
@@ -639,6 +639,22 @@ h2 + .quote {
 
 /* Slide specific styles here */
 
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.bg-white h3 {
+  color: #333;
+}
+
+.bg-white .pun {
+  color: #706cf5;
+}
+
 #slide-1 h2 {
   font-size: 1.5em;
 }
@@ -661,6 +677,16 @@ h2 + .quote {
 
 .five-images .slide-content p img {
   max-width: 19%;
+}
+
+.logos h2 {
+  margin-bottom: 1em;
+}
+
+.logos img {
+  max-width: 30%;
+  max-height: 5em;
+  padding: 0 1em;
 }
 
 .slide.card-closeup:before {
@@ -892,17 +918,46 @@ h2 + .quote {
 <p><a href="http://bit.ly/samsung-internet-open-beta">bit.ly/samsung-internet-open-beta</a></p>
 </section>
   </div>
-  <div class="slide hidden  img-with-header" id="slide-19">
+  <div class="slide hidden" id="slide-19">
+    <section class="slide-content"><h2 id="payment-gateways">Payment Gateways</h2>
+<p>TODO</p>
+</section>
+  </div>
+  <div class="slide hidden  logos bg-white" id="slide-20">
+    <section class="slide-content"><h3 id="early-supporters-include-">Early supporters include...</h3>
+<div class="flex"><img src="images/groupon.png" alt="Groupon"> <img src="images/mobify.png" alt="Mobify"> <img src="images/shopify.png" alt="Shopify"> <img src="images/washingtonpost.png" alt="Washington Post"> <img src="images/woocommerce.png" alt="Woo Commerce"> <img src="images/wwf.png" alt="WWF"></div>
+
+<h3 class="pun">&ldquo;Not just socks!&rdquo;</h3></section>
+  </div>
+  <div class="slide hidden  img-with-header" id="slide-21">
     <section class="slide-content"><p><img src="images/polykart.png" alt="Polykart"></p>
 <h3 class="pun">&ldquo;A lock, <strong>sock</strong> and barrel example&rdquo;</h3>
 
 <div class="caption"><a href="https://polykart-credential-payment.appspot.com/">polykart-credential-payment.appspot.com</a></div></section>
   </div>
-  <div class="slide hidden" id="slide-20">
-    <section class="slide-content"><h2 id="further-resources">Further resources</h2>
+  <div class="slide hidden" id="slide-22">
+    <section class="slide-content"><h2 id="future-possibilities-">Future possibilities...</h2>
+<h3 class="pun">&ldquo;It <strong>wool</strong> be great!&rdquo;</h3>
+
+<ul>
+<li>Gift cards / coupons</li>
+<li>Mobile payment app integration</li>
+<li>Secure tokenisation</li>
+</ul>
 </section>
   </div>
-  <div class="slide hidden  bg-fade socks-pile" id="slide-21">
+  <div class="slide hidden" id="slide-23">
+    <section class="slide-content"><h2 id="further-resources">Further resources</h2>
+<h3 class="pun">&ldquo;Following the same <strong>thread</strong>...&rdquo;</h3>
+
+<ul>
+<li><a href="medium.com/samsung-internet-dev/how-to-take-payments-on-the-web-with-the-payment-request-api-a523f6fc7c1f">bit.ly/how-to-take-web-payments</a></li>
+<li><a href="https://developers.google.com/web/fundamentals/discovery-and-monetization/payment-request/">bit.ly/payment-request-api-guide</a></li>
+<li><a href="https://developers.google.com/web/updates/2017/01/payment-request-updates">bit.ly/payment-request-updates</a></li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden  bg-fade socks-pile" id="slide-24">
     <section class="slide-content"><h1 id="thanks-">Thanks!</h1>
 <h2 class="pun">&ldquo;Shoe wants to ask a question?&rdquo;</h2>
 
