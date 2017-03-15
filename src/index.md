@@ -50,6 +50,10 @@ controls: false
 
 --
 
+![Sock sale](images/payment-request-socks-simple.png)
+
+--
+
 ```javascript
 if (window.PaymentRequest) {
   // We're good to go...
