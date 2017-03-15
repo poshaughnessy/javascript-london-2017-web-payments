@@ -12,7 +12,7 @@ controls: false
 
 <div class="contact">
   <p>Peter O'Shaughnessy</p>
-  <p>[@poshaughnessy](https://twitter.com/poshaughnessy)</p>
+  <p class="social">[@poshaughnessy](https://twitter.com/poshaughnessy)</p>
 </div>
 
 -- img-with-caption five-images
