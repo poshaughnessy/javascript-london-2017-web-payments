@@ -193,15 +193,17 @@ new PaymentRequest(methodData, details, options)
 
 [bit.ly/samsung-internet-open-beta](http://bit.ly/samsung-internet-open-beta)
 
---
+-- bg-white img-with-caption payment-gateways
 
-## Payment Gateways
+### Payment Gateways
 
-TODO
+![Payment parties](images/web-payments-parties.png)
+
+<p class="pun">&ldquo;You might <strong>knit</strong> to know this...&rdquo;</p>
 
 -- logos bg-white
 
-### Early supporters include...
+### Supporters include...
 
 <div class="flex">![Groupon](images/groupon.png) ![Mobify](images/mobify.png) ![Shopify](images/shopify.png) ![Washington Post](images/washingtonpost.png) ![Woo Commerce](images/woocommerce.png) ![WWF](images/wwf.png)</div>
 
@@ -222,8 +224,8 @@ TODO
 <h3 class="pun">&ldquo;It <strong>wool</strong> be great!&rdquo;</h3>
 
 * Gift cards / coupons
-* Mobile payment app integration
-* Secure tokenisation
+* Mobile payment app integrations
+* Credentials/tokenisation standardisation?
 
 --
 
@@ -234,6 +236,7 @@ TODO
 * [bit.ly/how-to-take-web-payments](medium.com/samsung-internet-dev/how-to-take-payments-on-the-web-with-the-payment-request-api-a523f6fc7c1f)
 * [bit.ly/payment-request-api-guide](https://developers.google.com/web/fundamentals/discovery-and-monetization/payment-request/)
 * [bit.ly/payment-request-updates](https://developers.google.com/web/updates/2017/01/payment-request-updates)
+* [bit.ly/can-make-payment-sample](http://bit.ly/can-make-payment-sample)
 
 -- bg-fade socks-pile
 

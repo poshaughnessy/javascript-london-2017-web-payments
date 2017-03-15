@@ -557,7 +557,7 @@ pre .xml .cdata {
 
 .slide .pun {
   color: #c4c3f5;
-  font-size: 1.1em;
+  font-size: 1em;
   font-style: italic;
 }
 
@@ -659,6 +659,14 @@ h2 + .quote {
   font-size: 1.2em;
 }
 
+#payment-gateways {
+  margin-bottom: 0.2em;
+}
+
+.payment-gateways .pun {
+  font-size: 0.9em;
+}
+
 .three-images .slide-content p img {
   max-width: 32%;
 }
@@ -679,6 +687,11 @@ h2 + .quote {
   max-width: 30%;
   max-height: 5em;
   padding: 0 1em;
+  margin-bottom: 0.5em;
+}
+
+.logos .pun {
+  font-size: 0.9em;
 }
 
 .slide.card-closeup:before {
