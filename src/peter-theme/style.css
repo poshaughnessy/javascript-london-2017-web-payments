@@ -557,6 +557,25 @@ pre .xml .cdata {
   font-style: italic;
 }
 
+.strikethrough {
+  position: relative;
+  padding: 0 5px;
+}
+.strikethrough:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 55%;
+  right: 0;
+  border-top: 5px solid rgba(230, 50, 25, 0.8);
+
+  -webkit-transform:rotate(-8deg);
+  -moz-transform:rotate(-8deg);
+  -ms-transform:rotate(-8deg);
+  -o-transform:rotate(-8deg);
+  transform:rotate(-8deg);
+}
+
 h2 + .quote {
   margin-top: 2em;
 }
@@ -595,14 +614,30 @@ h2 + .quote {
 }
 /* Background image to render things on top of */
 .slide.bg-fade:before {
-  -webkit-filter: blur(3px) grayscale(0.8) brightness(0.2);
-  filter: blur(3px) grayscale(0.8) brightness(0.2);
+  -webkit-filter: blur(3px) grayscale(0.1) brightness(0.2);
+  filter: blur(3px) grayscale(0.1) brightness(0.2);
+}
+.slide.bg-fade-more:before {
+  -webkit-filter: blur(4px) grayscale(0.1) brightness(0.1);
+  filter: blur(4px) grayscale(0.1) brightness(0.1);
 }
 .slide-content {
   z-index: 1;
 }
 
 /* Slide specific styles here */
+
+#slide-1 h2 {
+  font-size: 1.5em;
+}
+
+#slide-1 h2.emoji {
+  font-size: 3em;
+}
+
+#slide-1 h3 {
+  font-size: 1.2em;
+}
 
 .three-images .slide-content p img {
   max-width: 32%;
@@ -624,34 +659,22 @@ h2 + .quote {
 
 .slide.what-if:before {
   background-image: url(images/help.jpg);
-  -webkit-filter: blur(4px) brightness(0.1) grayscale(0.1);
-  filter: blur(4px) brightness(0.1) grayscale(0.1);
 }
 
 .slide.socks-pile:before {
   background-image: url(images/socks-pile.jpg);
-  -webkit-filter: blur(2px) brightness(0.3) grayscale(0.1);
-  filter: blur(2px) brightness(0.3) grayscale(0.1);
 }
 
 .slide.socks-drawer:before {
   background-image: url(images/socks-drawer.jpg);
-  -webkit-filter: blur(2px) brightness(0.3) grayscale(0.1);
-  filter: blur(2px) brightness(0.3) grayscale(0.1);
 }
 
 .slide.socks-stack:before {
   background-image: url(images/socks-stack.jpg);
-  -webkit-filter: blur(2px) brightness(0.3) grayscale(0.1);
-  filter: blur(2px) brightness(0.3) grayscale(0.1);
 }
 
 .emoji {
   font-weight: normal;
-}
-
-h2.emoji {
-  font-size: 3em;
 }
 
 .what-if h2 {
@@ -661,11 +684,10 @@ h2.emoji {
 .what-if li {
   font-size: 1.3em;
   margin-top: 1em;
-  text-shadow: 1px 1px 1px #666;
 }
 
 .what-if ul strong {
-  padding-right: 10px;
+  padding-right: 0.5em;
   color: #c4c3f5;
 }
 

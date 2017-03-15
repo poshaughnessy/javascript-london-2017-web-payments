@@ -3,14 +3,12 @@ output: public/index.html
 theme: peter-theme
 controls: false
 
--- card-closeup
+-- bg-fade card-closeup
 
 # Web Payments
 ## and the future of online checkouts
 
 <h2 class="emoji">💳</h2>
-
-### JavaScript London, March 2017
 
 <div class="contact">
   <p>Peter O'Shaughnessy</p>
@@ -29,7 +27,7 @@ controls: false
 
 <div class="caption">[baymard.com/lists/cart-abandonment-rate](https://baymard.com/lists/cart-abandonment-rate)</div>
 
--- img-with-caption what-if
+-- img-with-caption bg-fade-more what-if
 
 ## What if your browser could help?
 
@@ -42,13 +40,13 @@ controls: false
 
 [![Payment Request API spec](images/payment-request-api-spec.png)](https://www.w3.org/TR/payment-request/)
 
--- socks-drawer
+-- bg-fade socks-stack
 
 ## 1. Our first sock sale
 
 <h3 class="pun">&ldquo;Getting our <strong>foot</strong> in the door&rdquo;</h3>
 
-<div class="credit">By [Nikol Lohr](https://www.flickr.com/photos/sugarpants/5349120073)</div>
+<div class="credit">By [Gus Greeper](https://www.flickr.com/photos/gusgreeper/8329453791)</div>
 
 --
 
@@ -98,13 +96,13 @@ new PaymentRequest(methodData, details)
 
 <video src="videos/socks-megastore-simple.mp4" controls/>
 
--- socks-stack
+-- bg-fade socks-drawer
 
 ## 2. Adding customisations
 
 <h3 class="pun">&ldquo;Thinking outside the <strong>socks</strong>&rdquo;</h3>
 
-<div class="credit">By [Gus Greeper](https://www.flickr.com/photos/gusgreeper/8329453791)</div>
+<div class="credit">By [Nikol Lohr](https://www.flickr.com/photos/sugarpants/5349120073)</div>
 
 --
 
@@ -208,7 +206,7 @@ new PaymentRequest(methodData, details, options)
 ## Further resources
 
 
--- socks-pile
+-- bg-fade socks-pile
 
 # Thanks!
 
