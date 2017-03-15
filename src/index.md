@@ -209,7 +209,7 @@ new PaymentRequest(methodData, details, options)
 
 ### Supporters include...
 
-<div class="flex">![Groupon](images/groupon.png) ![Mobify](images/mobify.png) ![Shopify](images/shopify.png) ![Washington Post](images/washingtonpost.png) ![Woo Commerce](images/woocommerce.png) ![WWF](images/wwf.png)</div>
+<div class="flex">![Groupon](images/groupon.png) ![Mobify](images/mobify.png) ![Shopify](images/shopify.png) ![Washington Post](images/washingtonpost.png) ![WePay](images/wepay.png) ![Woo Commerce](images/woocommerce.png) ![WWF](images/wwf.png)</div>
 
 <h3 class="pun">&ldquo;Not just socks!&rdquo;</h3>
 
@@ -231,7 +231,7 @@ new PaymentRequest(methodData, details, options)
 * Mobile payment app integrations
 * Credentials/tokenisation standardisation?
 
---
+-- further-resources
 
 ## Further resources
 
@@ -241,6 +241,7 @@ new PaymentRequest(methodData, details, options)
 * [bit.ly/payment-request-api-guide](https://developers.google.com/web/fundamentals/discovery-and-monetization/payment-request/)
 * [bit.ly/payment-request-updates](https://developers.google.com/web/updates/2017/01/payment-request-updates)
 * [bit.ly/can-make-payment-sample](http://bit.ly/can-make-payment-sample)
+* [bit.ly/wepay-integration-docs](http://bit.ly/wepay-integration-docs)
 
 -- bg-fade socks-pile
 

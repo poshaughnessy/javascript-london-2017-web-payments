@@ -750,3 +750,7 @@ h2 + .quote {
 .browser-support table {
   margin: 2em 0;
 }
+
+.further-resources li {
+  font-size: 0.9em;
+}
