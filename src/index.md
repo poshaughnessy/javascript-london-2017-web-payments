@@ -31,7 +31,7 @@ controls: false
 
 ## What if your browser could help?
 
-* <strong><em>For users:</em></strong> consistent & secure experience
+* <strong><em>For users:</em></strong> simple & secure experience
 * <strong><em>For web devs:</em></strong> ready-to-use UI!
 
 <div class="credit">By [Marc Falardeau](https://www.flickr.com/photos/49889874@N05/5645164344)</div>
