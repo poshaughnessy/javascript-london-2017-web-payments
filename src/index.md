@@ -105,7 +105,9 @@ new PaymentRequest(methodData, details)
 
 --
 
-<video src="videos/socks-megastore-simple.mp4" controls/>
+<video src="videos/socks-megastore-simple.mp4" controls></video>
+
+<div class="caption">[samsunginter.net/examples/socks-megastore/after-simple/](http://samsunginter.net/examples/socks-megastore/after-simple/) &middot; [youtu.be/ruuJr30FCTw](https://youtu.be/ruuJr30FCTw)</div>
 
 -- bg-fade socks-drawer
 
@@ -167,7 +169,9 @@ new PaymentRequest(methodData, details, options)
 
 --
 
-<video src="videos/socks-megastore-options.mp4" controls/>
+<video src="videos/socks-megastore-options.mp4" controls></video>
+
+<div class="caption">[samsunginter.net/examples/socks-megastore/after-options/](http://samsunginter.net/examples/socks-megastore/after-options/) &middot; [youtu.be/BjEPBvn03i4](https://youtu.be/BjEPBvn03i4)</div>
 
 -- browser-support three-images
 
