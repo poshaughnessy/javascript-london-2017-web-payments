@@ -1,7 +1,7 @@
 title: Web Payments
 output: public/index.html
 theme: peter-theme
-controls: false
+controls: true
 
 -- bg-fade card-closeup
 
@@ -13,6 +13,7 @@ controls: false
 <div class="contact">
   <p>Peter O'Shaughnessy</p>
   <p class="social">[@poshaughnessy](https://twitter.com/poshaughnessy)</p>
+  <p class="social">[@samsunginternet](https://twitter.com/samsunginternet)</p>
 </div>
 
 -- img-with-caption five-images
