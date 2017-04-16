@@ -4,7 +4,7 @@ My slides for [JavaScript London, March 2017](https://www.meetup.com/JavaScript-
 
 ## To view the slides
 
-Check them out at: [LINK COMING SOON](todo)
+Check them out at: [poshaughnessy.github.io/javascript-london-2017-web-payments/](https://poshaughnessy.github.io/javascript-london-2017-web-payments/)
 
 Use arrow keys or the arrow buttons to move left/right.
 
